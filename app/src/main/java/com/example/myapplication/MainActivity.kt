@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         val prefs = getSharedPreferences(PREF_NAME, MODE_PRIVATE)
 
+
         if (prefs.getInt(COUNT_KEY, 0) > 1) {
             Toast.makeText(this, LoremIpsum.getInstance().getWords(5, 10), Toast.LENGTH_LONG).show()
         }
